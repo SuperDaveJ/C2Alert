@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>C² Alert</name>
+  <namespace>C2Techologies.Gadgets</namespace>
+  <version>1.0</version>
+  <author name="C² Technologies, Oklahoma City Software Development Group">
+    <logo src="images/Logo.png" />
+    <info url="http://www.c2mm.net/C2Alert" />
+  </author>
+  <copyright>
+    Copyright&#169; 2011
+  </copyright>
+  <description>The C² Alert system provides timely alerts and notifications of important news throughout the C² organization.</description>
+  <icons>
+    <icon width="64" height="64" src="images/Icon.png" />
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="Gadget.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+      <defaultImage src="images/DragIcon.png"/>
+    </host>
+  </hosts>
+</gadget>

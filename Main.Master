@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="C2Alert.Web.Main" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<%@ Register src="Controls/Banner.ascx" tagname="Banner" tagprefix="uc1" %>
+<%@ Register src="Controls/PageTitle.ascx" tagname="PageTitle" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>C² Alert</title>
+    <telerik:RadStyleSheetManager id="RadStyleSheetManager1" runat="server" />
+    <asp:Literal ID="C2AlertStyle" runat="server"></asp:Literal>
+    <asp:Literal ID="MainJavaScript" runat="server"></asp:Literal>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="C2AlertForm" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+		    <Scripts>
+			    <%--Needed for JavaScript IntelliSense in VS2010--%>
+			    <%--For VS2008 replace RadScriptManager with ScriptManager--%>
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.Core.js" />
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQuery.js" />
+			    <asp:ScriptReference Assembly="Telerik.Web.UI" Name="Telerik.Web.UI.Common.jQueryInclude.js" />
+		    </Scripts>
+	    </telerik:RadScriptManager>
+
+	    <telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
+	    </telerik:RadAjaxManager>
+
+        <asp:Literal ID="JQueryUIJavaScript" runat="server"></asp:Literal>
+        
+        <telerik:RadFormDecorator ID="RadFormDecorator1" runat="server" />
+
+	    <telerik:RadSkinManager ID="RadSkinManager1" Runat="server" Skin="Windows7">
+	    </telerik:RadSkinManager>
+
+        <uc1:Banner id="Banner1" runat="server" />
+
+        <div id="ToolbarDiv">
+            <uc2:PageTitle id="PageTitle1" runat="server" />
+            <div id="ToolbarContentDiv">
+                <div id="ToolbarContentTextDiv">
+                    <asp:ContentPlaceHolder ID="ToolBarContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+        <div id="MainContent">
+            <asp:ContentPlaceHolder ID="MainStandardFormContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

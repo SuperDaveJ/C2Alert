@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+    <title>C² Alert Settings</title>
+    <script language="javascript" type="text/javascript">
+        /*
+        ''' <summary>
+        ''' This function is called when the settings window is loading
+        ''' </summary>
+        */
+        function LoadSettings() 
+        {
+            document.getElementById('Versionlabel').innerHTML = System.Gadget.version;
+        } //LoadSettings
+    </script>
+   
+    <style type="text/css">
+        body 
+        {
+            margin: 0px;
+            padding: 0px;
+            width: 372px;
+            height: 268px;
+            font-family: Verdana, Segoe UI, Arial;
+            color: #000000;
+            cursor: default;
+            overflow: hidden;
+            font-size: 12px;
+            background: url(images/SettingBackground.png) no-repeat;
+        }
+
+        .Link
+        {
+	        color: #0000ff;
+            font-weight: bold;
+        }
+
+        .SubTitle 
+        {
+	        font-size: 15px;
+            font-weight: bold;
+        }
+
+        .MainTitle 
+        {
+	        font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body onload="LoadSettings()" >
+    <div>
+        <div align="center">
+		    <img src ="images/C2AlertAbout.jpg" alt ="About C² Alert"/>
+		</div>
+		<div align="center">
+		    <span class="MainTitle">
+                <a class="Link" href="http://www.c2mm.net/C2Alert" title="Go to the C² Alert website">C² Alert <label id="Versionlabel"></label></a>
+            </span>
+            <br />
+            <br />
+		    The C² Alert system provides timely alerts and notifications of important news throughout the C² organization.<br /><br />
+		    <br />
+            <span class="SubTitle">
+                C² Technologies, Inc.
+                <br />
+                Oklahoma City Software Development Group
+            </span>
+        </div>
+    </div>	
+</body>
+</html>

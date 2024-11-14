@@ -1,0 +1,368 @@
+﻿/*
+YUI Reset CSS from Yahoo
+*/
+html
+{
+	color: #000033;
+	height: 100%;
+}
+
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+fieldset,img
+{
+	border: 0px;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var,optgroup
+{
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+del,ins
+{
+	text-decoration: none;
+}
+
+caption,th
+{
+	text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-size: 14px;
+	font-weight: normal;
+}
+q:before,q:after
+{
+	content: '';
+}
+abbr,acronym
+{
+	border: 0px;
+	font-variant: normal;
+}
+sup
+{
+	vertical-align: baseline;
+}
+sub
+{
+	vertical-align: baseline;
+}
+legend
+{
+	color: #000000;
+}
+
+input,button,textarea,select,optgroup,option
+{
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+}
+
+input,button,textarea,select
+{
+	font-size: 14px;
+}
+
+body
+{
+	background-color: #ffffff;
+	font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+	font-size: 14px;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: #000033;
+	line-height: 14px; /* 10×1.4=14 */
+}
+
+form
+{
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: #000033;
+}
+
+h1
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ToolbarDiv
+{
+	height: 34px;
+	z-index: 10000;
+	border-style: none;
+}
+
+#PageTitleDiv
+{
+	width: 300px;
+	background-image: url(../Images/CommonImages/PageTitleBackground.png);
+	z-index: 10001;
+	border-style: none;
+	padding-left: 5px;
+	background-repeat: no-repeat;
+	height: 34px;
+	float: left;
+}
+
+#ToolbarContentDiv
+{
+	width: 600px;
+	z-index: 10001;
+	border-style: none;
+	padding-left: 5px;
+	height: 34px;
+	float: left;
+}
+
+#ToolbarContentTextDiv
+{
+	margin-top: 5px;
+}
+
+.PageTitleImage
+{
+	width: 32px; 
+	height: 32px;
+	float: left;
+	padding-top: 1px;
+}
+
+.PageTitle
+{
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#PageTitleTextDiv
+{
+	width: 268px;
+	height: 21px;
+	float: right;
+	margin-top: 10px;
+}
+
+#LeftBanner
+{
+	background-image: url(../Images/Banner/BannerLeft.jpg);
+	background-repeat: repeat-x;
+	height: 60px;
+	float: left;
+	width: 267px;
+}
+
+#CenterBanner 
+{
+	background-image: url(../Images/Banner/BannerMiddle.jpg);
+	background-repeat: repeat-x;
+	height: 60px;
+	vertical-align: bottom;
+}
+	
+#LoggedInAsDiv
+{
+	position: relative;
+	top: 40px;
+}
+
+#RightBanner
+{
+	background-image: url(../Images/Banner/BannerRight.jpg);
+	height: 60px;
+	float: right;
+	width: 267px;
+}
+
+.PageText
+{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left; 
+}
+
+.LoadingPanel
+{
+    border: 2px solid #000000;
+}
+
+.Label
+{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left; 
+}
+
+.LabelForText
+{
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.DetailText
+{
+	text-align: left;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+    width: 150px;
+}
+
+.ValidationWrapper
+{
+    border: solid 2px black;
+    padding-top: 10px;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.ValidationMessage
+{
+	font-size: 13px;
+	font-weight: bold; 
+	text-align:left;
+	color: #ff0000;
+	background: url(../Images/CommonImages/ValidationMessage.ico) no-repeat 5px 50%;
+}
+
+.ValidationMessage ul 
+{
+	margin: 0;
+	padding: 2px;
+	margin-left: 80px;
+}
+
+.ValidationErrorLi 
+{
+	list-style-type: none;
+	background: url(../Images/CommonImages/ValidationError.ico) no-repeat left center;
+	padding-left: 20px;
+	height: 30px;
+	background-position: left top;
+	vertical-align: top;
+	color: #ff0000;
+}
+
+.ValidationSuccessLi 
+{
+	list-style-type: none;
+	background: url(../Images/CommonImages/ValidationSuccess.ico) no-repeat left center;
+	padding-left: 20px;
+	height: 30px;
+	background-position: left top;
+	vertical-align: top;
+	color: green;
+}
+
+.ValidationStandardLi 
+{
+	list-style-type: none;
+	background: url(../Images/CommonImages/ValidationStandard.ico) no-repeat left center;
+	padding-left: 20px;
+	height: 30px;
+	background-position: left top;
+	vertical-align: top;
+	color: #008000;
+}
+
+.RadWindowDiv
+{
+	margin: 0px;
+	padding: 0px;
+	border-style: none;
+	border-width: 0px;
+	overflow: auto;
+}
+
+.RadWindowDivSmall
+{
+    margin: 0px;
+	padding: 0px;
+	border-style: none;
+	border-width: 0px;
+	overflow: auto;
+}
+
+#MainContent
+{
+	margin: 0px;
+	padding: 0px;
+	min-height: 370px;
+	height: 370px;
+	border-style: none;
+	border-width: 0px;
+	z-index: 10003;
+	clear: both;
+}
+
+.RequiredSpan
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.DialogWindow
+{
+	z-index: 100001;
+}
+
+.Link
+{
+	font-size: 14px;
+	font-weight: bold; 
+	color: #0000ff;
+}
+
+.GridLink
+{
+	color: #0000ff !important;
+    font-weight: bold !important; 
+}
+
+.StandardFormDiv
+{
+	padding-left: 5px;
+}
+
+.CenterDiv
+{
+	text-align: center;
+	margin: 0px auto;
+}
